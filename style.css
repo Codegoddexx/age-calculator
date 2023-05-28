@@ -1,0 +1,133 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: Poppins-ExtraBoldItalic;
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+    overflow: hidden;
+}
+
+
+main {
+    background-color: white;
+    border-radius: 1em;
+    border-bottom-right-radius: 28%;
+    padding: 2rem;
+}
+
+
+header {
+    display: flex;
+    gap: 3em;
+    font-family: Poppins-Regular;
+}
+
+
+.dot {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+
+input {
+    width: 7em;
+    height: 3em;
+    font-size: 1em;
+    font-weight: 900;
+    /* margin-bottom: 2em; */
+    margin-top: 0.5em;
+    padding: 0.6em;
+}
+
+
+input:focus {
+outline-color: hsl(259, 100%, 65%) ;
+caret-color:hsl(259, 100%, 65%) ;
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+button {
+background-color: hsl(259, 100%, 65%);
+border-radius: 50%;
+height: 5em;
+width: 5em;
+border: none;
+display: flex;
+justify-content: right;
+justify-content: center;
+align-items: center;
+}
+
+
+ button:hover {
+background-color: black;
+ }    
+
+
+.wow {
+display: flex;
+align-items: center;
+}
+
+hr {
+    flex: 1;
+}
+
+h1 {
+  font-family: Poppins-ExtraBoldItalic;
+  font-size: 3.5rem;
+}
+
+p {
+    font-family: Poppins-Regular;
+    font-size: 0.65rem;
+    height: 1.25rem;
+    width: 100%;
+    margin-top: 0.35em;
+    font-style: italic;
+}
+
+span {
+color: hsl(259, 100%, 65%);
+font-weight: 900;
+}
+
+
+.inputError {
+    border: 1px solid hsl(0, 100%, 67%) !important;
+}
+
+
+.pError {
+    color: hsl(0, 100%, 67%) !important;
+}

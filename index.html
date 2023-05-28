@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <header>
+      <div class="container">
+        <label id="day">Day</label>
+        <input type="number" placeholder="DD" id="dd">
+        <p id="pday"></p>
+      </div>
+      <div class="container">
+        <label id="month">Month</label>
+        <input type="number" placeholder="MM" id="mm">
+        <p id="pmonth"></p>
+      </div>
+      <div class="container">
+        <label id="year">Year</label>
+        <input type="number" placeholder="YYYY" id="yy">
+        <p id="pyear"></p>
+      </div>
+    </header>
+    <div class="wow">
+      <hr>
+      <button id="submitbtn"> <img src="assets/images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div>
+      <h1> <span id="spanyear">- -</span> years</h1>
+      <h1><span id="spanmonth">- -</span>  months</h1>
+      <h1><span id="spanday">- -</span> days</h1>
+    </div>
+  </main>
+<script src="script.js"></script>
+</body> 
+</html>
